@@ -37,9 +37,8 @@ menu3.add_command(label="nom de la transaction", command='alert')
 menubar.add_cascade(label="recherche", menu=menu3)
 
 menu4 = Menu(menubar, tearoff=0)
+menu4.add_command(label="type de dépense", command='alert')
 menu4.add_command(label="montant", command='alert')
-menu4.add_command(label="date", command='alert')
-menu4.add_command(label="categorie", command='alert')
 menubar.add_cascade(label="sauvegarde", menu=menu4)
 
 window.config(menu=menubar)
